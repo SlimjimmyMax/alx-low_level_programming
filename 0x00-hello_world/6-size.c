@@ -1,19 +1,17 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-    printf("Size of char: %ld byte\n", sizeof(char));
-    printf("Size of short: %ld bytes\n", sizeof(short));
-    printf("Size of int: %ld bytes\n", sizeof(int));
-    printf("Size of long: %ld bytes\n", sizeof(long));
-    printf("Size of long long: %ld bytes\n", sizeof(long long));
-    printf("Size of float: %ld bytes\n", sizeof(float));
-    printf("Size of double: %ld bytes\n", sizeof(double));
-    printf("Size of long double: %ld bytes\n", sizeof(long double));
-    printf("Size of void pointer: %ld bytes\n", sizeof(void *));
-    return 0;
+    printf("The size of a char is %lu bytes.\n", sizeof(char));
+    printf("The size of an int is %lu bytes.\n", sizeof(int));
+    printf("The size of a long int is %lu bytes.\n", sizeof(long int));
+    printf("The size of a float is %lu bytes.\n", sizeof(float));
+    printf("The size of a double is %lu bytes.\n", sizeof(double));
+
+    return (0);
 }
