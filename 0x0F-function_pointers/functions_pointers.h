@@ -1,20 +1,10 @@
-#ifndef FUNCTION_POINTERS_H
-#define FUNCTION_POINTERS_H
+#ifndef _FUNCTION_POINTER_H_
+#define _FUNCTION_POINTER_H_
 
+#include <stddef.h>
+
+int _putchar(char);
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
-
-/**
- * enum bool - typedef function for bool
- * @TRUE: 1
- * @FALSE: 0
-*/
-typedef enum bool
-{
-	TRUE = 1,
-	FALSE = 0
-} bool;
-
-#endif
-
+#endif /* _FUNCTION_POINTER_H_ */
