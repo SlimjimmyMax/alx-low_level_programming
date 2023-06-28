@@ -6,16 +6,10 @@
 
 /**
  * main - Performs calculator operations
- * @argc: Number of command-line arguments
- * @argv: Array of command-line arguments
+ * @argc: The number of command-line arguments
+ * @argv: Array of command-line argument strings
  *
- * This program performs calculator operations based on the provided arguments.
- * It takes three arguments: the first operand, the operator, and the second operand.
- * The supported operators are + (addition), - (subtraction), * (multiplication), / (division), and % (modulo).
- * The program prints the result of the operation to the standard output.
- *
- * Returns: 0 upon success, 98 if the wrong number of arguments is provided,
- *          99 if an invalid operator is used, or 100 if division by zero occurs.
+ * Return: 0 upon success, or specific error codes for invalid inputs.
  */
 int main(int argc, char *argv[])
 {
@@ -49,3 +43,4 @@ int main(int argc, char *argv[])
 
     return (0);
 }
+
