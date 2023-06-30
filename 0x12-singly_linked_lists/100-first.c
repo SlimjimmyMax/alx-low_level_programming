@@ -1,18 +1,13 @@
-// 100-first.c
-
 #include <stdio.h>
 
-/**
- * myStartupFun - Apply the constructor attribute to myStartupFun()
- *                so that it is executed before main()
- */
-void myStartupFun(void) __attribute__((constructor));
+void __attribute__((constructor)) hare(void);
 
 /**
- * myStartupFun - Implementation of myStartupFun
+ * hare - Constructor function executed before main.
+ *        Prints a string to the console.
  */
-void myStartupFun(void)
+void hare(void)
 {
-    printf("You're beat! and yet, you must allow,\n");
-    printf("I bore my house upon my back!\n");
+    printf("You're beat! and yet, you must allow,\n"
+           "I bore my house upon my back!\n");
 }
