@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stddef.h>
-
 /**
- * flip_bits - Returns the number of bits needed to flip to get from one number to another.
+ * flip_bits - Returns the number of bits needed to flip to get from one number
+ *             to another.
  * @n: Unsigned long integer representing the first number.
  * @m: Unsigned long integer representing the second number.
  *
@@ -20,5 +20,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		xor_result >>= 1;
 	}
 
-	return count;
+	return (count);
 }
