@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
- * main - check the code
- *
- * Return: Always EXIT_SUCCESS.
- */
 int main(void)
 {
-    printf("%d\n", _strlen("My Dyn Lib"));
-    return (EXIT_SUCCESS);
+    int result_islower = _islower('a');
+    int result_isalpha = _isalpha('A');
+
+    printf("_islower('a') = %d\n", result_islower);
+    printf("_isalpha('A') = %d\n", result_isalpha);
+
+    return 0;
 }
