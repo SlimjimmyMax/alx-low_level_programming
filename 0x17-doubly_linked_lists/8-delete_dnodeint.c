@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * Deletes the node at a given index of a dlistint_t list.
@@ -7,7 +8,7 @@
  *
  * Return: 1 if deletion succeeded, -1 if it failed.
  */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *current, *temp;
 	unsigned int count = 0;
